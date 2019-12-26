@@ -31,3 +31,9 @@ To use it:
 
 To solve some errors, use instead:
 `ngrok.cmd http 3000`
+
+## AsyncStorage
+
+`setItem(key, value)` - Stores information on the user's device
+`getItem(key)` - Retrieves an item that has been stored
+`removeItem(key)` - Remove some stored information

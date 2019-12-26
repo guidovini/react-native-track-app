@@ -16,7 +16,6 @@ const SignupScreen = ({ navigation }) => {
       <Spacer>
         <Text h3>Sign Up for Tracker</Text>
       </Spacer>
-
       <Input
         autoCapitalize="none"
         autoCorrect={false}
@@ -35,7 +34,7 @@ const SignupScreen = ({ navigation }) => {
         onChangeText={setPassword}
       />
 
-      {state.errorMessage && (
+      {state.errorMessage.length > 0 && (
         <Text style={styles.errorMessage}>{state.errorMessage}</Text>
       )}
 
