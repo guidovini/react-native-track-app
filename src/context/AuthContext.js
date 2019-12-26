@@ -11,9 +11,15 @@ const authReducer = (state, action) => {
     case 'SIGNUP':
     case 'SIGNIN':
       return { errorMessage: '', token: action.payload };
+    case 'CLEAR_ERROR_MESSAGE':
+      return { ...state, errorMessage: '' };
     default:
       return state;
   }
+};
+
+const clearErrorMessage = dispatch => () => {
+  dispatch({ type: 'CLEAR_ERROR_MESSAGE' });
 };
 
 const signup = dispatch => async ({ email, password }) => {
@@ -62,7 +68,8 @@ const signout = dispatch => {
 const actions = {
   signup,
   signin,
-  signout
+  signout,
+  clearErrorMessage
 };
 
 const initialValue = {

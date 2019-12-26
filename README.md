@@ -37,3 +37,18 @@ To solve some errors, use instead:
 `setItem(key, value)` - Stores information on the user's device
 `getItem(key)` - Retrieves an item that has been stored
 `removeItem(key)` - Remove some stored information
+
+## Important concepts
+
+- `withNavigation()`
+- `navigation.addListener('didFocus', () => {})`
+- NavigationEvents
+
+```js
+<NavigationEvents
+  onWillFocus={() => {}} // Navigate to a screen. Instant the button it is pressed.
+  onDidFocus={() => {}} // Navigate to a screen. When I land into the screen.
+  onWillBlur={() => {}} // When I am about to navigate away from the screen
+  onDidBlur={() => {}} // When the transition completes. BUGGY!
+/>
+```
