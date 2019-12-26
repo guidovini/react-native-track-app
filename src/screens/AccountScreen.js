@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Text, StyleSheet } from 'react-native';
 import { Button } from 'react-native-elements';
+import { SafeAreaView } from 'react-navigation';
 
 import { Context as AuthContext } from '../context/AuthContext';
 
@@ -10,13 +11,13 @@ const AccountScreen = () => {
   const { signout } = useContext(AuthContext);
 
   return (
-    <>
+    <SafeAreaView forceInset={{ top: 'always' }}>
       <Text>AccountScreen</Text>
 
       <Spacer>
         <Button title="Sign Out" onPress={signout} />
       </Spacer>
-    </>
+    </SafeAreaView>
   );
 };
 

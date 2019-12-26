@@ -52,3 +52,9 @@ To solve some errors, use instead:
   onDidBlur={() => {}} // When the transition completes. BUGGY!
 />
 ```
+
+- `SafeAreaView`
+
+```js
+<SafeAreaView forceInset={{ top: 'always' }}>...</SafeAreaView>
+```
