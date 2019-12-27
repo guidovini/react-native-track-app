@@ -68,6 +68,14 @@ import MapView from 'react-native-maps';
 import { requestPermissionsAsync } from 'expo-location';
 ```
 
+```js
+import {
+  Accuracy,
+  requestPermissionsAsync,
+  watchPositionAsync
+} from 'expo-location';
+```
+
 ---
 
 ## Important concepts
