@@ -38,6 +38,16 @@ To solve some errors, use instead:
 `getItem(key)` - Retrieves an item that has been stored
 `removeItem(key)` - Remove some stored information
 
+## React Native Maps
+
+`npx expo-cli install react-native-maps`
+
+Import
+
+```js
+import MapView from 'react-native-maps';
+```
+
 ## Important concepts
 
 - `withNavigation()`
