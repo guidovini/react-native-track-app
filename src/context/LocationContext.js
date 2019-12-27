@@ -12,6 +12,8 @@ const locationReducer = (state, action) => {
       return { ...state, locations: [...state.locations, action.payload] };
     case 'CHANGE_NAME':
       return { ...state, name: action.payload };
+    case 'RESET':
+      return { ...state, name: '', locations: [] };
     default:
       return state;
   }
@@ -36,11 +38,16 @@ const addLocation = dispatch => (location, recording) => {
   }
 };
 
+const reset = dispatch => () => {
+  dispatch({ type: 'RESET' });
+};
+
 const actions = {
   changeName,
   startRecording,
   stopRecording,
-  addLocation
+  addLocation,
+  reset
 };
 
 const initialValue = {
