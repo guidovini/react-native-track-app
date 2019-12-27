@@ -90,3 +90,5 @@ import { requestPermissionsAsync } from 'expo-location';
 ```js
 <SafeAreaView forceInset={{ top: 'always' }}>...</SafeAreaView>
 ```
+
+- `ActivityIndicator` from react-native
