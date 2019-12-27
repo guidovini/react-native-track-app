@@ -34,6 +34,8 @@ To solve some errors, use instead:
 
 ## AsyncStorage
 
+AsyncStorage is being _deprecated_ and moved into a new package.
+
 `setItem(key, value)` - Stores information on the user's device
 `getItem(key)` - Retrieves an item that has been stored
 `removeItem(key)` - Remove some stored information
