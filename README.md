@@ -58,6 +58,18 @@ import MapView from 'react-native-maps';
 />;
 ```
 
+- Polyline
+
+## `expo-location`
+
+`npx expo-cli install expo-location`
+
+```js
+import { requestPermissionsAsync } from 'expo-location';
+```
+
+---
+
 ## Important concepts
 
 - `withNavigation()`
